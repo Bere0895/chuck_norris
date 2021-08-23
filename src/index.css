@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.backgroundColor{
+  text-align: center;
+  background: aliceblue;
+  padding-bottom: 5%;
+}
+.title{
+  padding-top: 5%;
+  font-size: 3em;
+}
+.imgSize{
+  width: 10%;
+}
+.joke{
+  padding-left: 2%;
+  padding-right: 2%;
+  color: cornflowerblue;
+}
+.buttons{
+  height: 40px;
+  border-radius: 10px;
+  background: lightcoral;
+  width: 20%;
+}
+.buttonsCategory{
+  height: 40px;
+  border-radius: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  background: aliceblue;
+  text-transform: capitalize;
+  color: cornflowerblue;
+}
+.category{
+  font-size: 30px;
+  color: cornflowerblue;
+}

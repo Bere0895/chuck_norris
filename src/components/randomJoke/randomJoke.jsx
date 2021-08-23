@@ -1,10 +1,12 @@
-import React from 'react'
-import '../../../src/styles.css'
+import axios from 'axios';
+import React from 'react';
 
-export function randomJoke() {
+import './../../index.css'
+
+export function RandomJoke({viewJoke}) {
     const getJokes = () =>{
-        fetch('').then(async resp=>{
-            const data = await resp.json()
+        axios.get('https://api.chucknorris.io/jokes/random').then(async resp=>{
+            const data = await resp.data
             viewJoke(data.value)
         })
     }

@@ -1,9 +1,19 @@
-import React from 'react'
+import React, {Fragment, useEffect, useState} from 'react'
+import { Category } from './category'
 
-export function jokeList() {
+
+export function JokeList({categoryList, viewJoke}) {
+   
+   
     return (
-        <div>
-            
-        </div>
+        <Fragment>
+            <div>
+                {
+                    categoryList.map((value) =>
+                      <Category categoryList={value.name} viewJoke={viewJoke}/>
+                    )
+                }
+            </div>
+        </Fragment>
     )
 }
