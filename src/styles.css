@@ -1,0 +1,27 @@
+.backgroundColor{
+    background: antiquewhite;
+    text-align: center;
+    font-family: cursive;
+}
+.imgSize{
+    width: 20%;
+}
+.title{
+    padding-top: 5%;
+    font-size: 5em;
+}
+.buttons{
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 2em;
+}
+.jesting{
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 20px;
+}
+.category{
+    font-size: 30px;
+    color: cornflowerblue;
+}
