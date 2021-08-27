@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React from 'react';
 
-import './../../index.css'
+import styles from './randomJoke.module.css';
+
 
 export function RandomJoke({viewJoke}) {
     const getJokes = () =>{
@@ -12,7 +13,7 @@ export function RandomJoke({viewJoke}) {
     }
     return (
         <div>
-            <button className="buttons" onClick={getJokes}>Broma Aleatoria</button>
+            <button className={styles.buttons} onClick={getJokes}>Broma Aleatoria</button>
         </div>
     )
 }

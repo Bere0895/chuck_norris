@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import  axios  from 'axios'
-import './../../index.css'
+
+import styles from './jokeList.module.css';
 
 export function Category({categoryList, viewJoke}) {
     const getJoke = () =>{
@@ -10,7 +11,7 @@ export function Category({categoryList, viewJoke}) {
     }
     return (
         <Fragment>
-            <button className="buttonsCategory" onClick={getJoke}>{categoryList} </button>
+            <button className={styles.buttonsCategory} onClick={getJoke}>{categoryList} </button>
         </Fragment>
         
     )

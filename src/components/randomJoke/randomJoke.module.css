@@ -1,0 +1,7 @@
+.buttons{
+    height: 40px;
+    border-radius: 10px;
+    background: lightcoral;
+    width: 20%;
+    cursor: pointer;
+  }

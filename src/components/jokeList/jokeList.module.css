@@ -1,0 +1,11 @@
+.buttonsCategory{
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    background: aliceblue;
+    text-transform: capitalize;
+    color: cornflowerblue;
+    cursor: pointer;
+  }

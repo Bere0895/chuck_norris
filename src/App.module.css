@@ -1,0 +1,22 @@
+.backgroundColor{
+    text-align: center;
+    background: aliceblue;
+    padding-bottom: 5%;
+  }
+  .title{
+    padding-top: 5%;
+    font-size: 3em;
+  }
+  .imgSize{
+    width: 10%;
+  }
+  .joke{
+    padding-left: 2%;
+    padding-right: 2%;
+    color: cornflowerblue;
+  }
+  
+  .category{
+    font-size: 30px;
+    color: cornflowerblue;
+  }

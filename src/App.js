@@ -1,9 +1,9 @@
 import React, { Fragment, useState, useEffect } from 'react';
-
 import { RandomJoke } from './components/randomJoke/randomJoke';
 import { JokeList } from './components/jokeList/jokeList';
-import './index.css'
 import  axios  from 'axios';
+
+import styles from './App.module.css'
 
 function App (){
     
@@ -11,7 +11,6 @@ function App (){
         joke: "Selecciona una broma de categoria o aleatoria"
     })
     const viewJoke = (joke) =>{
-        console.log(joke)
         setJoke({joke:joke})
     }
 
@@ -30,12 +29,12 @@ function App (){
 
     return (
         <Fragment>
-            <div className="backgroundColor">
-                <h1 className="title">Chuck Norris</h1>
-                <img className="imgSize" src="https://assets.chucknorris.host/img/avatar/chuck-norris.png"/>
-                <p className="joke">{joke.joke}</p>
+            <div className={styles.backgroundColor}>
+                <h1 className={styles.title}>Chuck Norris</h1>
+                <img className={styles.imgSize} src="https://assets.chucknorris.host/img/avatar/chuck-norris.png"/>
+                <p className={styles.joke}>{joke.joke}</p>
                 <RandomJoke viewJoke={viewJoke}/>
-                <p className="category">Categorías</p>
+                <p className={styles.category}>Categorías</p>
                 <JokeList categoryList={categoryList} viewJoke={viewJoke} />
             
             </div>
